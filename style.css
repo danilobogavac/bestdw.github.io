@@ -1,0 +1,77 @@
+h1 {
+    text-align: center;
+    color: #0f1036;
+    font-size: 90px;
+}
+.prvi {
+    padding-top: 20px;
+    padding-left: 90px;
+}
+.prvi h4 {
+    color: #1c0a59;
+    font-size: 40px;
+}
+.prvi p {
+    font-style: bold;
+    font-size: 30px;
+    font-weight: 900;
+}
+#nesto {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(117, 119, 240, 0.2); 
+} 
+#prvi {
+    padding: 30px;
+    
+}
+#drugi {
+    padding: 30px;
+}
+#prvi span {
+    background-color: #0f1036;
+    font-size: 20px;
+    padding: 25px;
+    color: azure;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+#prvi p {
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #2c2d73;
+    padding-left: 5%;
+    
+}
+#drugi span {
+    background-color: #0f1036;
+    font-size: 20px;
+    padding: 25px;
+    color: azure;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+#drugi p {
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #2c2d73;
+    padding-left: 5%;
+}
+img{
+    
+    width: 100%;
+        
+}
+#nesto1 {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(57, 84, 49, 0.2); 
+} 
+#prvi span,#drugi span {
+    background-color: #0d3800;
+ 
+}
