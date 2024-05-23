@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <form action="">
+    <div class="zaglavlje">
+        <h2>Anketa 1</h2>
+        <p>Ova anketa se sprovodi da bi nasa katedra mogla da na najbolji moguci nacin organizuje izspit iz HTML-a</p>
+        <p>Anketa će biti otvorena do petka!</p>
+    </div>
+    <div class="prvo-polje">
+        <h4>Ime i Prezime</h4>
+        <input type="text" class="ime-prezime" required>
+    </div>
+    <div class="broj-indeksa">
+        <h4>Broj Indeksa</h4>
+        <input type="text" class="ime-prezime" required> <p>Napomena: Obavezno napisati broj indeksa i formatu 2022/9999</p>
+    </div>
+    <div class="ispit">
+        <h4>Odaberite ispite koje zelite da prijavite:</h4>
+        
+            <input type="checkbox" id="Baze" name="BazeISPIT" value="baze">
+            <label for="BazeISPIT">Baze</label><br>
+    
+            <input type="checkbox" id="OFM" name="OFMISPIT" value="OFM">
+            <label for="OFMISPIT">OFM</label><br>
+
+            <input type="checkbox" id="SPA" name="SPAISPIT" value="SPA">
+            <label for="SPAISPIT">SPA</label><br>
+
+            <input type="checkbox" id="Cloud" name="CloudISPIT" value="Cloud">
+            <label for="CloudISPIT">Cloud</label><br>
+
+            <input type="checkbox" id="Statistika" name="StatistikaISPIT" value="Statistika">
+            <label for="StatistikaISPIT">Statistika</label><br>
+
+            <input type="checkbox" id="Web" name="WebISPIT" value="Web">
+            <label for="WebISPIT">Web</label><br>
+            
+
+          
+    </div>
+
+    <div class="mail">
+        <h4>Unesite vas mail:</h4>
+        <input type="mail" placeholder="pp20229999@student.fon.bg.ac.rs" >
+        <p>Napomena: Naziv maila uneti po sablonu koji je prikazan gore!</p>
+    </div>
+
+    <input type="submit" value="Posaljite vasu prijavu" class="prijava">
+    </form>
+    <div id="neki"></div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+
+.zaglavlje {
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 10px 20% 0 10%;
+    border-radius: 5px;
+    height: 30vh;
+    background-color: antiquewhite;
+}
+.zaglavlje h2 {
+    font-weight: bold;
+    font-size: 28px;
+}
+.zaglavlje  p {
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.prvo-polje {
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    height: 15vh;
+    padding: 5px 20% 0 10%;    
+}
+.ime-prezime {
+    width: 200px;
+}
+.broj-indeksa {
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    height: 18vh;
+    padding: 5px 20% 0 10%; 
+}
+.broj-indeksa p{
+    font-size: 12px;
+}
+.ispit {
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    height: 35vh;
+    padding: 5px 20% 0 10%;    
+}
+.ispit form {
+    padding: 20px 0 20px 0;
+    height: 35vh;
+}
+.ispit form input, .ispit form label {
+    margin-bottom: 10px;
+}
+.mail {
+    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    height: 18vh;
+    padding: 5px 20% 0 10%;   
+}
+.mail input {
+    width: 300px;
+}
+.mail p {
+    font-size: 12px;
+}
+.prijava {
+    left: 40%;
+    position: absolute;
+    height: 50px;
+    width: 220px;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 20px;
+}
+.prijava:hover {
+    background-color: black;
+    color: white;
+}
+#neki {
+    margin-bottom: 200px;
+}
+
+

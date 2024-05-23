@@ -1,243 +1,166 @@
-h1 {
-    text-align: center;
-    color: #0f1036;
-    font-size: 90px;
+body {
+    background-image: url(img/priroda1.jpg);
+    background-size: cover;
+   margin: 0;
+   padding: 0;
+    height: 100%;
+    width: 100%;
+    /* padding-left: 10%;
+    padding-right: 10%;
+     */
 }
-.prvi {
-    padding-top: 20px;
-    padding-left: 90px;
+
+.navbar { 
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 12vh;
+    background-color:black;
+    width: 100%; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "ime-sajta linkovi";
 }
-.prvi h4 {
-    color: #1c0a59;
+  
+.ime-sajta { 
+        grid-area: ime-sajta; 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: flex-end;
+}
+  
+.linkovi {
+    margin-left: 100px;
+    margin-right: 100px;
+        grid-area: linkovi;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: flex-end;
+    }
+.linkovi a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+.ime-sajta h1 {
+    font-size: 30px;
+    color: white;
+}
+  
+.content {
+    margin-top: 12vh;
+    padding-top: 40px;
+    height: 40vh;
+    margin-left: 10%;
+    width: 50%;
+    color:  white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+}
+#filter {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.content h4 {
     font-size: 40px;
 }
-.prvi p {
-    font-style: bold;
-    font-size: 30px;
-    font-weight: 900;
+.content h1 {
+    padding-top: 0px;
+    font-size: 100px;
 }
-#nesto {
-    padding-top: 80px;
-    display: flex;
-    justify-content: space-around;
-    background-color: rgba(117, 119, 240, 0.2); 
-} 
-#prvi {
-    padding: 30px;
+.content p {
+    font-size: 25px
+}
+.content button {
     
+    border: none;
+    height: 80px;
+    width:200px;
+    border-radius: 2px;
+    background-color: black;
 }
-#drugi {
-    padding: 30px;
+.content button a {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
 }
-#prvi span {
-    background-color: #0f1036;
-    font-size: 20px;
-    padding: 25px;
-    color: azure;
-    border-radius: 20px;
-    margin-bottom: 50px;
-}
-#prvi p {
-    padding-top: 30px;
-    font-size: 20px;
-    font-weight: 400;
-    color: #2c2d73;
-    padding-left: 5%;
-    
-}
-#drugi span {
-    background-color: #0f1036;
-    font-size: 20px;
-    padding: 25px;
-    color: azure;
-    border-radius: 20px;
-    margin-bottom: 50px;
-}
-#drugi p {
-    padding-top: 30px;
-    font-size: 20px;
-    font-weight: 400;
-    color: #2c2d73;
-    padding-left: 5%;
-}
-img{
-    
-    width: 100%;
-        
-}
-#nesto1 {
-    padding-top: 80px;
-    display: flex;
-    justify-content: space-around;
-    background-color: rgba(57, 84, 49, 0.2); 
-} 
-#prvi span,#drugi span {
-    background-color: #0d3800;
- 
+.content button:hover {
+    color: black;
+    background-color: rgba(5, 0, 0, 0.6);
 }
 
-.a, .b,.c {
-    height: 30vh;
+.destinacije {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: flex-end;
+        margin-top: 400px;
+        height: 300px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+}
+.destinacije div {
+    width: 200px;
+    height: 200px ;
+    color: transparent;
+    background-color: transparent;
+}
+.destinacije div:hover {
     width: 250px;
-}
-
-.a {
-    background-color: #2c2d73;
-}
-.b {
-    background-color:#1c0a59;
-    position: relative;
-}
-.c {
-    background-color: #0d3800;
-}
-#crveni {
-background-color: red;
-height: 200px;
-width: 600px;
-}
-#plavi {
-    background-color: blue;
-    height: 200px;
-    width: 600px;
-    position: relative;
-    }
-#zuti {
-    position: absolute;
-    background-color: yellow;
-    width: 250px;
-    height: 200px;
-}
-#zeleni {
-    background-color: green;
-    height: 200px;
-    width: 600px;
-        }
-#navbar {
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    height: 10vh;
-    width: 100%;
-    background-color: antiquewhite;
+    height: 250px;
+    color: white;
+    background-color: black;
    
 }
-
-#logo {
-    width: 20px;
-    height: 45px;
-    position: absolute;
-
-}
-#logo-div {
-    height: 100%;
+.destinacije p {
+    background-color: inherit;
+    color: inherit;
+    width: 100px;   
     position: relative;
-    background-image: url(img/png-transparent-mclaren-wave-logo-car-logos-thumbnail-removebg-preview.png);
-    background-size: 10vh;
-    background-position: center;
-    background-repeat: no-repeat;
+    left: 90px;
+    top: 120px;
+    font-size: 30px;
+    font-weight: bold;
 }
-#links {
-    height: 10vh;
-    
-    text-align: center;
-    font-size: 20px;
-    text-decoration: none;
-    padding-top: 20px;
-    padding-bottom: 0px;
+#croatia {
+    background-image: url(img/croatia.jpg);
+    background-size: cover;
 }
-#links a {
-    padding-left: 30px;
-    padding-top: 50px;
-    text-decoration: none;
-    color: #0f1036;
+#spain {
+    background-image: url(img/spain);
+    background-size: cover;
 }
-#links a:hover {
-    color: #c2910c;
+#italy {
+    background-image: url(img/italy.jpg);
+    background-size: cover;
 }
-#navbar div {
-    display: inline-block;
-    justify-content: space-between;
-    width: 32%;
+#iceland {
+    background-image: url(img/iceland.jpg);
+    background-size: cover;
 }
-#slika {
-    background-image: url(img/cubes-677092_1280.webp);
-    width: 100%;
-    height: 40vh;
+.destinacije #italy p {
+    width: 65px;
 }
-.vozaci {
-    height: 50vh;
-    background-color: cadetblue;
-    position: relative;
-}
-.vozaci div {
-    position: absolute;
-    justify-content: space-between;
-    height: 100%;
-    width: 50%;
-    border-radius: 1px solid black;
-}
-
-#vozac1 {
-    
-left: 0;
-background-image: url(img/f1.jpg);
-background-size: cover;
-}
-
-#vozac1 h4, p {
-    font-weight: 900;
-    position: absolute;
-    left:  20%;
-    top: 30%;
-}
-#vozac1 h4 {
-    background-color: aqua;
-    border-radius: 10px;
-    font-size: 40px;
-    color: #29201f;
-    padding: 10px 10px;
-}
-#vozac1 p {
-    padding: 10px 10px;
-    top:  60%;
-    background-color: aqua;
-    border-radius: 10px;
-    font-size: 20px;
-    color: #29201f;
-}
-#vozac1 h4:hover, #vozac1 p:hover{
-    background-color: white;
-    color: black;
-}
-#vozac2 {
-background-size: cover;
-right: 0;
-background-image: url(img/max.jpg);
-}
-#vozac2 h4, p {
-    font-weight: 900;
-    position: absolute;
-    left:  20%;
-    top: 30%;
-}
-#vozac2 h4 {
-    background-color: aqua;
-    border-radius: 10px;
-    font-size: 40px;
-    color: #29201f;
-    padding: 10px 10px;
-}
-#vozac2 p {
-    padding: 10px 10px;
-    top:  60%;
-    background-color: aqua;
-    border-radius: 10px;
-    font-size: 20px;
-    color: #29201f;
-}
-#vozac2 h4:hover, #vozac2 p:hover{
-    background-color: white;
-    color: black;
+.destinacije #spain p {
+    width: 75px;
 }

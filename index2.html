@@ -4,38 +4,43 @@
         <meta charset="UTF-8">
         <meta name="viewport">
         <title>Dokument</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style4.css">
     </head>
     <body>
-        <div id="navbar">
-            <div></div>
-            <div id="logo-div">
-                <!-- <img src="img/png-transparent-mclaren-wave-logo-car-logos-thumbnail.png" alt="" id="logo"> -->
-            </div>
-            <div id="links">
-                <a href="">POCETNA</a>
-                <a href="">O NAMA</a>
-                <a href="">BLOG</a>
-                <a href="">OSTALO</a>
-            </div>
+       
+        <div class="teren">
+            <div id="igrac"></div>
         </div>
-        <div id="crveni"></div>
-        <div id="plavi">
-            <div id="zuti"></div>
-        </div>
-        <div id="zeleni"></div>
-        <div id ="slika"></div>
-
-        <div class="vozaci">
-            <div id="vozac1">
-                <h4>Here is our F1 team!</h4>
-                <P>CHECK IT OUT</P>
-            </div>
-            <div id="vozac2">
-                <h4>Max won AGAIN!</h4>
-                <P>CHECK IT OUT</P>
-            </div>
-        </div>
-
+        
+        <script>
+            document.addEventListener('keydown', function(event) {
+                const igrac = document.getElementById('igrac');
+                const teren = document.querySelector('.teren');
+                const step = 10;
+        
+                // Dobijanje trenutnih pozicija igrača
+                let top = parseInt(window.getComputedStyle(igrac).top);
+                let left = parseInt(window.getComputedStyle(igrac).left);
+        
+                // Dobijanje dimenzija terena i igrača
+                const terenRect = teren.getBoundingClientRect();
+                const igracRect = igrac.getBoundingClientRect();
+        
+                switch(event.key) {
+                    case 'ArrowUp':
+                        if (top > 0) igrac.style.top = top - step + 'px';
+                        break;
+                    case 'ArrowDown':
+                        if (top + igracRect.height < terenRect.height) igrac.style.top = top + step + 'px';
+                        break;
+                    case 'ArrowLeft':
+                        if (left > 0) igrac.style.left = left - step + 'px';
+                        break;
+                    case 'ArrowRight':
+                        if (left + igracRect.width < terenRect.width) igrac.style.left = left + step + 'px';
+                        break;
+                }
+            });
+        </script>
     </body>
 </html>
